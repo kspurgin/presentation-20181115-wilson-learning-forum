@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Data in the Transformative Research Library</title>
+<meta name="author" content="(Kristina M. Spurgin)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./css/reveal.css"/>
+
+<link rel="stylesheet" href="./css/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+  <section id="sec-title-slide" data-background-image="images/Background1.png"><h1 class="title">Data in the Transformative Research Library</h1><h2 class="author">Kristina M. Spurgin</h2>
+    <h4>Library Data Strategist, UNC Chapel Hill Libraries - @kspurgin</h4>
+    <h3 class="date">2018-10-16</h3><h4>University of Notre Dame Hesburgh Libraries</h4>
+</section>
+
+<section>
+<section id="slide-org1b39cd8">
+<h2 id="org1b39cd8">Introduction</h2>
+<ul>
+<li>Who am I?</li>
+<li>Notes and disclaimers</li>
+<li>Presentation + supplementary materials at: <a href="https://is.gd/20181016_ndhl">https://is.gd/20181016_ndhl</a></li>
+
+</ul>
+<aside class="notes">
+<ul>
+<li>Library Data Strategist at UNC Chapel Hill Libraries</li>
+<li>It is impossible to comprehensively cover this topic in 45 minutes.</li>
+<li>I have chosen to cover some areas I feel are particularly important, or where there are developments I believe are particularly interesting</li>
+<li>Though the topics are presented in a more or less linear fashion, they are truly overlapping and inter-related</li>
+<li>This presentation is available online with speaker notes that include details mentioned and citations</li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbea150f">
+<h2 id="orgbea150f">Orthogonal theme: Data Literacy</h2>
+<blockquote nil>
+<p>
+Information that directly impact people’s lives is increasingly accessible but civil society is falling behind in making effective use of it. --<a href="https://schoolofdata.org/team/">School of Data</a>
+</p>
+</blockquote>
+
+<p>
+Universities have a responsibility to ensure that today's students learn to engage with and use data to understand the world and inform decision-making. 
+</p>
+
+<p>
+<b>Research libraries can be key partners in making this happen.</b>
+</p>
+
+<aside class="notes">
+<p>
+This is a theme that I wanted to nod to in almost every slide in this presentation, so I wanted to make this statement up front so I can point back to it. 
+</p>
+
+<p>
+Data literacy is an important aspect of being an educated person today. The ability to understand and grapple with data cannot be left to the tech nerds and 'business intelligence specialists.' The news cycle provides plenty of dystopian examples of what these folks will do with data when there is no good data-informed oversight or critical response. 
+</p>
+
+<p>
+Whether universities are taking seriously the responsibility to build a data literate populace is out of scope of this talk, but this is a topic that research libraries can champion within their organizations and we are well-located to contribute to this goal. 
+</p>
+
+<p>
+As the rest of this presentation will show, libraries are already a hub of many of essential data literacy skills. We already partner with faculty to enrich learning experiences with our collections and expertise. We can expand these partnerships to embed data literacy in classrooms across disciplines.
+</p>
+
+<p>
+<b>More info/references</b>
+</p>
+<ul>
+<li><a href="https://schoolofdata.org/">School of Data</a> - "School of Data is a global network committed to advancing data literacy in civil society. Information that directly impact people’s lives is increasingly accessible but civil society is falling behind in making effective use of it. Through our global network of data literacy practitioners and trainers, School of Data seeks to address this data skills gaps in order to amplify the messages of civil society through the use of data. We level the playing field by ensuring that civil society organisations and newsrooms have the knowledge, resources and tools they need to participate fully in the information age&#x2026; School of Data is a network of data literacy practitioners composed of organisations and individuals. Together, we implement an array of data literacy programmes in our respective countries and regions. Members of School of Data network work to support civil society organizations (CSOs), journalists, and citizens to engage with and use data in their efforts to create better, more equitable and more sustainable societies. Over the past four years, School of Data has succeeded in developing and sustaining a thriving network of data literacy practitioners across Europe, Latin America, Asia and Africa."</li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdc2a5cd">
+<h2 id="orgdc2a5cd">Context: The transformative research library</h2>
+<ul>
+<li>Libraries are in transformation</li>
+<li>Working in a transformative library transforms you</li>
+<li>A transformative research library transforms the world</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+In my research, I found that being a transformative research library is a core part of your library's mission. I did not find a clear outline what that means to you in practice, so I thought about what it means to me in order to scope and bound this talk. What I came up with was: 
+</p>
+
+<p>
+First, research libraries themselves are in a transformation process.
+Many libraries are expanding our missions from a focus on collecting and providing access to research outputs, to providing support for the entire research lifecycle.
+This expanded mission calls for new services (where collections themselves are understood to be services, and we broaden our definition of what collections are).
+These changes are happening in an environment where many research libraries face ever-decreasing resources.
+This raises difficult questions about what we will stop doing and stop providing in order to rise to our new missions, given that assuming we can perpetually "do more with less" is unrealistic and a recipe for failure and burnout
+</p>
+
+<p>
+In this environment, library staff are required to: 
+</p>
+<ul>
+<li>iteratively rethink why and how work is done, in alignment with overall library mission and goals</li>
+<li>extend their existing skills and experise into new domains</li>
+<li>gain new skills and expertise</li>
+<li>build relationships with colleagues and partners inside and out of the libraries in new and creative ways</li>
+
+</ul>
+
+<p>
+The transformative research library changes the world by: 
+</p>
+<ul>
+<li>playing a core role in producing a data-literate society</li>
+<li>helping researchers find, access, use, and create new knowledge</li>
+<li>creating collections that can be aggregated and used programmatically in novel ways</li>
+<li>knocking down barriers to access</li>
+
+</ul>
+
+<p>
+Which doesn't actually narrow it down that much, but oh well&#x2026; 
+</p>
+
+<p>
+<b>More info/references</b>
+For an inspiring vision of the transformative future of libraries, see the <a href="https://future-of-libraries.mit.edu/">MIT Future of Libraries Task Force Preliminary Report</a>. [TODO: zcite]
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org58bec2d">
+<h2 id="org58bec2d">Context: Data</h2>
+<ul>
+<li>Research data</li>
+<li>Collections as data</li>
+<li>Library data</li>
+<li>Patron data
+<ul>
+<li>(Library data)</li>
+<li>Vendors and third party applications</li>
+<li>All the data about an individual</li>
+
+</ul></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+I'm going to talk about four general categories of data in research libraries today. 
+</p>
+
+<p>
+(READ CATEGORIES) 
+</p>
+
+<p>
+I show you this as an overview of what's coming in the rest of this presentation. I'll talk more about how I define each of these as I get to the relevant sections. 
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd82792b">
+<h2 id="orgd82792b">Research Data</h2>
+
+<div id="orge0b824b" class="figure">
+<p><img src="./images/data_lifecycle.png" alt="data_lifecycle.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>USGS Science Data Lifecycle Model. Boxes indicate the main Model elements, and the shaded arrows below represent cross-cutting elements.<sup>1</sup></p>
+</div>
+
+<aside class="notes">
+<p>
+Research data is data in any format gathered, created, and/or used in the process of research. This includes numeric data, textual data, audio and visual data, sensor data, etc. 
+</p>
+
+<p>
+Overall, this has typically been library-exogenous data, created independent of the library and becoming our concern only when researchers need help finding datasets to use, or a place to store/publish their own research data.
+</p>
+
+<p>
+The traditional research library mission was to collect the published/shared products of research. Today, research libraries are expanding their missions to include support for the entire research lifecycle. This future vision includes much deeper library involvement with research data. Let's look at some of the aspects of this: 
+</p>
+
+<p>
+<b>More info/references</b>
+</p>
+<ol>
+<li>Faundeen, John L., Thomas E. Burley, Jennifer A. Carlino, David L. Govoni, Heather S. Henkel, Sally L. Holl, Vivian B. Hutchison, et al. 2014. “The United States Geological Survey Science Data Lifecycle Model.” Report 2013–1265. Open-File Report. Reston, VA. USGS Publications Warehouse. <a href="https://doi.org/10.3133/ofr20131265">https://doi.org/10.3133/ofr20131265</a>.</li>
+
+</ol>
+
+</aside>
+</section>
+<section id="slide-org96f45a5">
+<h3 id="org96f45a5">Data management plans (DMPs)</h3>
+<ul>
+<li>Required by an increasing number of funders (<a href="https://dmptool.org/public_templates">src</a>)</li>
+<li>Calls for decisions about: 
+<ul>
+<li>metadata</li>
+<li>organizing data</li>
+<li>selecting file formats</li>
+<li>supporting sharing and reuse of data</li>
+<li>data archiving and preservation</li>
+<li>rights, licensing, open access considerations</li>
+
+</ul></li>
+
+</ul>
+
+<p>
+<b>These are not new concepts or skills for libraries!</b>
+</p>
+
+<aside class="notes">
+<p>
+A growing number of funders require researchers applying for funding to file a data management plan. Different funders have different requirements.
+</p>
+
+<p>
+The library is a place where this expertise already exists. It is a much smaller leap for librarians to extend their existing expertise in these areas to apply to data, than it is for researchers to learn all these skills from scratch.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org597ab75">
+<h3 id="org597ab75">Library services and tools related to DMP</h3>
+<ul>
+<li><a href="https://dmptool.org">DMPTool</a></li>
+<li>Online resources and guides (<a href="https://guides.nyu.edu/data_management">NYU</a>, <a href="https://libraries.mit.edu/data-management/">MIT</a>, <a href="https://www.lib.umn.edu/datamanagement/">Minnesota</a>)</li>
+<li>Workshops, trainings, one-on-one consultations</li>
+
+</ul>
+<aside class="notes">
+<p>
+I won't go into detail about this stuff because, from your website and workshops calendar, it looks like you already know about these things and can talk to folks in Navari Family Center for Digital Scholarshipfor details. 
+</p>
+
+<p>
+Quickly, if you don't know: 
+</p>
+
+<ul>
+<li><b>DMPTool</b> is an open-source application (created in part by libraries) that researchers can use to create DMPs meeting specific funders' requirements</li>
+<li>I have included some links to a few of the most extensive and linked-to library <b>Resources/guides</b> on DMPs (and other research data topics) that I know of</li>
+
+</ul>
+
+<p>
+<b>More info/references</b>
+</p>
+<ul>
+<li>DMPTool's original contributing institutions in 2011 included:
+<ul>
+<li>California Digital Library</li>
+<li>UCLA Libray</li>
+<li>UC San Diego Libraries</li>
+<li>University of Illinois, Urbana-Champaign Library</li>
+<li>University of Virginia Library</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orgb876e85">
+<h3 id="orgb876e85">Managing, processing and analyzing research data</h3>
+<p>
+Training and consultation in:
+</p>
+<ul>
+<li>Data cleaning and remediation</li>
+<li>R, Python, or other languages for manipulating and analyzing data</li>
+<li>Data visualization</li>
+<li>GIS data and mapping</li>
+<li>Corpus linguistics tools and methods + Data mining</li>
+<li>Creating transparent, reproducible research using <a href="http://jupyter.org/">Jupyter Notebooks</a> or other tools</li>
+<li>Distributing/sharing and version controlling data (<a href="https://datproject.org/">Dat Project</a>)</li>
+<li>Principles of <a href="https://frictionlessdata.io/">frictionless data</a></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Many libraries, this one among them, provide <b>training and consultation</b> on a wide range of techniques and tools for working with data: 
+</p>
+
+<p>
+I see this as an extension of libraries' long history of collaborating with researchers to provide text encoding, analysis, and custom web interfaces to explore digital research projects mainly in the digital humanities. 
+</p>
+
+<p>
+The Jupyter Notebooks for metadata mapping documentation are publicly viewable on Github. Look for the .ipynb files in <a href="https://github.com/trln/data-documentation/tree/master/marc">this directory</a> and eventually other sections of the <a href="https://github.com/trln/data-documentation">TRLN data documentation repository</a>.
+</p>
+
+<p>
+<b>More info/references</b>
+"The <b>Jupyter Notebook</b> is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more." (<a href="http://jupyter.org/">src</a>)
+</p>
+
+<p>
+"<b>Dat</b> is a data distribution tool with a version control feature for tracking changes and publishing data sets. It is primarily used for data-driven science, but it can be used to keep track of changes in any data set. As a distributed revision control system it is aimed at speed, simplicity, security, and support for distributed, non-linear workflows." (<a href="https://en.wikipedia.org/wiki/Dat_(software)">src</a>)
+</p>
+
+<p>
+<b>Frictionless data</b>: " we have learned that there is too much friction in working with data. The frictions we seek to remove&#x2014;in getting, sharing, and validating data&#x2014;stop people from truly benefiting from the wealth of data being opened up every day. This kills the cycle of find/improve/share that makes for a dynamic and productive data ecosystem." Focused &#x2013; Web-oriented &#x2013; Distributed &#x2013; Open &#x2013; Built around existing software &#x2013; Simple 
+</p>
+
+<p>
+See also <a href="https://csvconf.com/">csv,conf</a>
+</p>
+
+</aside>
+</section>
+<section id="slide-org7c74b2e">
+<h3 id="org7c74b2e">Data discovery</h3>
+<p>
+Our users need data to: 
+</p>
+<ul>
+<li>conduct research</li>
+<li>complete coursework</li>
+<li>meet personal information needs</li>
+
+</ul>
+
+<p>
+<b>Libraries are exploring ways to help users to find the data they need</b>
+</p>
+
+</section>
+<section id="slide-org767557a">
+<h3 id="org767557a">Data catalogs</h3>
+<blockquote nil>
+<p>
+A data catalog is an <b>aggregation of metadata and corresponding links to data</b>. The catalogs are used to bring together related data that may be hosted in different repositories to make it easier for researchers to find data. Current catalogs range from aggregating research data from an institution to from an entire field. --<a href="https://nnlm.gov/data/thesaurus">National Network of Libraries of Medicine Data Thesaurus</a>
+</p>
+</blockquote>
+
+<ul>
+<li><a href="https://library.columbia.edu/locations/dssc/data/numdata/data-catalog-holdings.html">Columbia University Libraries Digital Social Science Center Data Catalog</a></li>
+<li><a href="https://www.datacatalogcollaborationproject.org/">Data Catalog Collaboration Project (DCCP)</a> (NYU, UPitt, Duke, UMB, UVA, UNC, Wayne State)</li>
+
+</ul>
+
+
+<aside class="notes">
+<p>
+<b>More info/references</b>
+A relatively new trend on my radar, seeming to be coming primarily out of the Health Sciences, is data catalogs. 
+</p>
+
+<p>
+(READ DEFINITION)
+</p>
+
+<p>
+This is different than the hand-curated catalog lists of available data sets maintained by Columbia University Libraries linked to here. 
+</p>
+
+<p>
+"The Data Catalog Collaboration Project (DCCP) helps researchers make their own data discoverable, and locate usable biomedical data that is not readily accessible elsewhere online. The DCCP is a collaboration of academic libraries working to highlight institutional biomedical research data using an open source catalog."
+</p>
+
+<p>
+"[DCCP] metadata has been mapped to the Data Tag Suite (DATS) developed by NIH bioCADDIE to ensure that it can be indexed in national discovery systems like DataMed."
+</p>
+
+<p>
+DCCP is a relatively new project with catalogs still rather small. 
+Process of creating descriptions is labor intensive. 
+At UNC, it has involved conducting interview with each dataset creator. 
+</p>
+
+<p>
+I have questions about: 
+</p>
+<ul>
+<li>creating more siloes</li>
+<li>sustainability in terms of level of effort</li>
+<li>sustainability in terms of what happens when researcher who has the data leaves an institution</li>
+<li>how to best facilitate access after discovery?</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orgd88add9">
+<h3 id="orgd88add9">Repositories and data</h3>
+<ul>
+<li>Institutional repository seems a natural fit</li>
+<li>And the data is now discoverable, right??</li>
+
+<li>Disciplinary/subject repository</li>
+<li>Data-specific repositories<sup>1</sup></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Some funders require that research data be made available in an open access repository. (<a href="http://roarmap.eprints.org/cgi/search/archive/advanced?screen=Search&amp;dataset=archive&amp;policymaker_type=funder&amp;policymaker_type=funder_and_research_org&amp;policymaker_name_merge=ALL&amp;policymaker_name=&amp;policy_adoption=&amp;policy_effecive=&amp;mandate_content_types=data&amp;mandate_content_types_merge=ANY&amp;apc_fun_url_merge=ALL&amp;apc_fun_url=&amp;satisfyall=ALL&amp;order=policymaker_name&amp;_action_search=Search">src</a>)
+</p>
+
+<p>
+Many research libraries are responsible for their university's insitutional respository (IR). 
+</p>
+
+<p>
+This would seem a natural place to encourage affiliated researchers to deposit their research data sets, and it looks like Notre Dame allows researchers to do that, which is great.
+</p>
+
+<p>
+However, IR design often prioritizes ingest, preservation, and access over discovery functions and user experience. Further, "each individual repository is of limited value for research"<sup>2</sup> because it's an institution-specific silo. 
+</p>
+
+<p>
+Even if it works well to store data in the IR, it's a good idea to think about how to improve the discoverability of this data. More on this in a few&#x2026;
+</p>
+
+<p>
+At UNC, we've historically received feedback from some researchers that no one is going to come to UNC's IR to find datasets. It exists outside the disciplinary data ecosystems where such data will be best described, discovered, and used. 
+</p>
+
+<p>
+Some disciplines have trusted repositories already in place. Also, there are dedicated data repository tools.
+</p>
+
+<p>
+There are pros and cons to all of these approaches, but the big takeaway for me here is the importance of metadata and interoperability. 
+</p>
+
+
+<p>
+<b>More info/references</b>
+</p>
+<ol>
+<li>Dataverse Project. “A Comparative Review of Various Data Repositories.” Blog. Dataverse Project Blog, July 25, 2017. <a href="https://dataverse.org/blog/comparative-review-various-data-repositories">https://dataverse.org/blog/comparative-review-various-data-repositories</a>.</li>
+
+<li>Confederation of Open Access Repositories (COAR). Working Group 2: Repository Interoperability. “The Case for Interoperability for Open Access Repositories,” July 2011. <a href="https://www.coar-repositories.org/files/A-Case-for-Interoperability-Final-Version.pdf">https://www.coar-repositories.org/files/A-Case-for-Interoperability-Final-Version.pdf</a>.</li>
+
+</ol>
+
+</aside>
+
+</section>
+<section id="slide-org89d73b5">
+<h3 id="org89d73b5">Responsibilities in larger data discovery ecosystem</h3>
+<p>
+If we are building institutional or consortial data repositories or catalogs:
+</p>
+<ul>
+<li>Support harvesting and aggregation of your metadata
+<ul>
+<li>OAI-PMH, <a href="http://www.openarchives.org/rs/toc">ResourceSync</a>, or an API that supports metadata harvesting</li>
+
+</ul></li>
+<li>Ensure metadata is interoperable
+<ul>
+<li>Use standard data description schemata (<a href="http://www.ddialliance.org/training/why-use-ddi">DDI</a>, <a href="http://www.dcc.ac.uk/resources/metadata-standards/abcd-access-biological-collection-data">ABCD</a>, <a href="https://www.nature.com/articles/sdata201759">DATS</a>, <a href="https://guides.nyu.edu/data_management/encoding-discipline">etc.</a>)</li>
+<li>Share your metadata application profiles</li>
+
+</ul></li>
+<li>Register your collections with appropriate external resources
+<ul>
+<li><a href="http://service.re3data.org/search">Registry of Research Data Repositories</a></li>
+<li><a href="https://datamed.org/">DataMed</a></li>
+
+</ul></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+True interoperability is extremely complex and difficult to achieve. However this slide shows some basic best practices that will get us closer to being able to effectively aggregate research data for discovery. 
+</p>
+
+<p>
+When these responsibilities are met, it's possible to do cool things like&#x2026; (next slide)
+</p>
+
+<p>
+<b>More info/references</b>
+"The <b>Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)</b> is a low-barrier mechanism for repository interoperability. Data Providers are repositories that expose structured metadata via OAI-PMH. Service Providers then make OAI-PMH service requests to harvest that metadata." (<a href="https://www.openarchives.org/pmh/">src</a>)
+</p>
+
+<p>
+-=-
+</p>
+
+<p>
+"<b>ResourceSync</b> is a self-describing set of capabilities designed to keep content in sync between a provider and consumer of that content. The capabilities of a ResourceSync endpoint can be adapted to meet specific community requirements as it extends the Sitemaps protocol used by Google and other search engines.
+</p>
+
+<p>
+The project team has been motivated to leverage ResourceSync as an alternative, or next-generation, approach to harvesting repository metadata by aggregators. ResourceSync is attractive because it utilizes native qualities of the web to solve the problem of keeping web-published resources in sync as inevitable changes occur. Nothing special is required beyond publication of a sitemap and change lists, leveraging timestamps to indicate that changes have been published and when they occurred. We anticipated that it’d be an improvement over the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)." (<a href="http://hydrainabox.samvera.org/2017/06/22/resourcesync.html">src</a>)
+</p>
+
+<p>
+-=-
+</p>
+
+<p>
+"<b>DDI [Data Documentation Initiative]</b> encourages comprehensive description of data for discovery and analysis and supports effective data sharing. Because DDI is a structured standard, it facilitates machine-actionability and interoperability and it can actually be used to drive systems. Another feature of DDI is its focus on metadata reuse; “enter once, use often” means you can reuse metadata over the course of the data life cycle to avoid costly duplication of effort." (<a href="http://www.ddialliance.org/training/why-use-ddi">src</a>)
+</p>
+
+<p>
+-=-
+</p>
+
+<p>
+"The <b>Access to Biological Collections Data (ABCD) Schema</b> is an evolving comprehensive standard for the access to and exchange of data about specimens and observations (a.k.a. primary biodiversity data). The ABCD Schema attempts to be comprehensive and highly structured, supporting data from a wide variety of databases. It is compatible with several existing data standards. Parallel structures exist so that either (or both) atomised data and free-text can be accommodated." (<a href="http://www.dcc.ac.uk/resources/metadata-standards/abcd-access-biological-collection-data">src</a>)
+</p>
+
+<p>
+-=-
+</p>
+
+<p>
+"<b>DAta Tag Suite (DATS) model</b> to support the DataMed data discovery index. DataMed’s goal is to be for data what PubMed has been for the scientific literature. DATS has a core set of elements, which are generic and applicable to any type of dataset, and an extended set that can accommodate more specialized data types. DATS is a platform-independent model also available as an annotated serialization in schema.org, which in turn is widely used by major search engines like Google, Microsoft, Yahoo and Yandex." (<a href="https://www.nature.com/articles/sdata201759">src</a>)
+</p>
+
+<p>
+"DataMed is a prototype biomedical data search engine. Its goal is to discover data sets across data repositories or data aggregators." (<a href="https://datamed.org/">src</a>)
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgf709a40">
+<h3 id="orgf709a40">Aggregation of metadata from data repositories in discovery tools</h3>
+<ul>
+<li><a href="https://www.trln.org/">Triangle Research Libraries Network (TRLN)</a> shared catalog
+<ul>
+<li>One shared index and <a href="http://search.trln.org">union catalog</a> of Duke, NCCU, NCSU, and UNC holdings</li>
+<li>Individual institutional catalogs for Duke, UNC, and NCSU</li>
+
+</ul></li>
+<li>External feeds of metadata from two data repositories mapped into catalog
+<ul>
+<li><a href="https://dataverse.unc.edu/dataverse/odum">UNC Odum Institute Archive Dataverse</a>
+<ul>
+<li><a href="http://search.trln.org/search?N=211056+210952">~2895 dataset records</a></li>
+<li>unrestricted sets only</li>
+<li>appear for all institutions</li>
+<li>OAI-PMH harvest</li>
+
+</ul></li>
+<li><a href="https://www.icpsr.umich.edu/icpsrweb/ICPSR/">Inter-university Consortium for Political and Social Research (ICPSR)</a>
+<ul>
+<li><a href="http://search.trln.org/search?N=210945">~10,696 study records</a></li>
+<li>appear for Duke, NCSU, and UNC only</li>
+<li>regular data set refresh (.tar file)</li>
+
+</ul></li>
+
+</ul></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+UNC Chapel Hill Libraries is a member Triangle Research Libraries Network (TRLN). A major ongoing TRLN inititive is our consortial shared catalog, which is used by 3 of the 4 institutions as our primary catalog-level discovery tool (as opposed to journal contents/full text search of e-resources level discovery tool such as EDS or Summon). 
+</p>
+
+<p>
+The shared catalog contains data not only from our respective integrated library systems, but also from selected digital collections, Encoded Archival Description records, enhanced indexable content (for tables of contents and book summaries) from Syndetics Solutions, and other sources. 
+</p>
+
+<p>
+One of the ways we have increased the discoverability of research data sets across our institutions is by mapping metadata from two external data set repositories into our shared catalog. 
+</p>
+
+<p>
+<b>More info/references</b>
+"The Odum Institute Archive Dataverse contains social science data curated and archived by the Odum Institute Data Archive at the University of North Carolina at Chapel Hill. Some key collections include the primary holdings of the Louis Harris Data Center, the National Network of State Polls, and other Southern-focused public opinion data."
+</p>
+
+<p>
+ICPSR: "An international consortium of more than 700 academic institutions and research organizations&#x2026;ICPSR maintains a data archive of more than 500,000 files of research in the social sciences. It hosts 16 specialized collections of data in education, aging, criminal justice, substance abuse, terrorism, and other fields."
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orga629eae">
+<h3 id="orga629eae">UNC Odum Institute Archive Dataverse record</h3>
+
+<div id="org1525428" class="figure">
+<p><img src="./images/dataverse_record.png" alt="dataverse_record.png" height="450" />
+</p>
+<p><span class="figure-number">Figure 2: </span>UNC Odum Institute Archive Dataverse record appearing in the TRLN shared catalog (<a href="https://search.trln.org/search?R=DataverseOdumCollectiondoi1015139S311927">link</a>)</p>
+</div>
+
+<aside class="notes">
+<p>
+I know you probably cannot see these records well and this presentation is not the place to look at them in detail. 
+</p>
+
+<p>
+BUT I wanted to show them to you so you can notice that the overall shape of the record is somewhat different because of the differences in the underlying metadata that we map into our own catalog. 
+</p>
+
+</aside>
+</section>
+<section id="slide-orgf3635f8">
+<h3 id="orgf3635f8">ICPSR record in TRLN Shared Catalog</h3>
+
+<div id="org664c1d1" class="figure">
+<p><img src="./images/icpsr_record.png" alt="icpsr_record.png" height="450" />
+</p>
+<p><span class="figure-number">Figure 3: </span>ICPSR record appearing in the TRLN shared catalog (<a href="http://search.trln.org/search?id=ICPSR36862">link</a>)</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbab2ad8">
+<h2 id="orgbab2ad8">Collections as data</h2>
+<blockquote nil>
+<p>
+"Aims to encourage computational use of digitized and born digital collections. By conceiving of, packaging, and making collections available as data, cultural heritage institutions work to expand the set of possible opportunities for engaging with collections."--<a href="https://collectionsasdata.github.io/statement/">Santa Barbara Statement on Collections as Data</a>
+</p>
+</blockquote>
+
+<aside class="notes">
+<p>
+Collections as data is an interesting emerging area focused on how libraries (and other cultural heritage institutions) can transform their collections (or, typically, slices of/selections from the collections) into data that can be used programmatically/computationally by researchers. 
+</p>
+
+<p>
+I see three main categories of collections as data initiatives and will talk about them each briefly.
+</p>
+
+<p>
+<b>More info/references</b>
+For much more on this topic, see the <a href="https://www.zotero.org/groups/2171423/collections_as_data_-_projects_initiatives_readings_tools_datasets">Collections as data - projects, initiatives, readings, tools, datasets group Zotero library</a> - "Ongoing collection of projects, readings, initiatives, tools, and datasets that are in some way or another related to collections as data. This group is an open resource, welcoming contributions from anyone who has a resource to share."
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgdbf10ea">
+<h3 id="orgdbf10ea">Digitizing texts &#x2013; beyond page images</h3>
+<blockquote nil>
+<p>
+"Libraries should move beyond the creation of digital images of original sources. Digital materials should allow scholars to do interesting and amazing things with our unique collections beyond what is possible with their physical incarnation rather than trying to replicate the experience of the original."--<a href="https://collectionsasdata.github.io/facet11/">Zarafonetis, Michael, and Sarah M. Horowitz. “Beyond Penn’s Treaty.”</a>
+</p>
+</blockquote>
+
+<p>
+What if users could leverage our collections for: 
+</p>
+
+<p>
+Text mining and analysis - Topic modeling - Network modeling - Machine learning - Feature and named entity extraction - Other natural language processing tests
+</p>
+
+<aside class="notes">
+<p>
+To some extent, this is not at all a new idea. Libraries have been engaged in this for a long time. For example, UNC Chapel Hill Libraries' Documenting the American South was transcribing and encoding in TEI/XML slave narratives, other first person narratives, and additional primary source literature in 2004! 
+</p>
+
+<p>
+What seems new is the scale we are aiming for, some of the newer tools available for getting this work done, and what seems like a changing approach to quality. UNC's DocSouth project was hand-encoded and extremely close attention to quality. 
+</p>
+
+<p>
+While some of the projects currently described on the Collections as Data site are similar, a number of them also seem to be willing to accept a lot more messiness, with the hope of FIRST getting the data out there; and SECOND accepting an iterative quality improvement process, perhaps leveraging the fact that smart people crunching the data could help identify quality problems and means of repairing or mitigating them. 
+</p>
+
+<ul>
+<li>MIT - electronic theses and dissertations (this is a use case that arose at UNC just last week!)</li>
+<li>A number of historic newspapers projects</li>
+<li>journals and letters written by Quaker travelers in the late eighteenth and early nineteenth centuries</li>
+
+</ul>
+
+<p>
+<b>Very important: leverage and re-negotiate existing resource agreements &#x2013; researchers want to be able to do things with vendor-provided collections too</b>
+</p>
+
+<p>
+<b>More info/references</b>
+Zarafonetis, Michael, and Sarah M. Horowitz. “Beyond Penn’s Treaty.” Collections as Data Facets. Accessed October 15, 2018. <a href="https://collectionsasdata.github.io/facet11/">https://collectionsasdata.github.io/facet11/</a>.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org02dd10b">
+<h3 id="org02dd10b">Making analog tabular data computationally actionable</h3>
+
+<div id="orge4b69af" class="figure">
+<p><img src="./images/southern_weather_discovery.png" alt="southern_weather_discovery.png" height="400" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Interface for transcribing old weather data from ocean voyages via the <a href="https://www.zooniverse.org/projects/drewdeepsouth/southern-weather-discovery">Southern Weather Discovery project on Zooniverse</a></p>
+</div>
+
+<aside class="notes">
+<p>
+As a spreadsheet nerd and wannabe science nerd, this category is particularly exciting to me. It's also particularly tricky in that it's very hard to OCR this data in the proper tabular format. 
+</p>
+
+<p>
+The image here is from a Zooniverse project under review, which uses crowdsourcing to transcribe old climate data. Imagine if all the old data in logbooks were made searchable, crunchable! What might we learn? 
+</p>
+
+<p>
+<b>More info/references</b>
+Some examples of projects in this category:
+</p>
+<ul>
+<li><a href="https://osf.io/c3egt/">Hopkins Marine Station CalCOFI hydrobiological survey of Monterey Bay, CA: 1951 - 1974</a></li>
+
+</ul>
+<p>
+" Description: In 1951, the Hopkins Marine Station of Stanford University became a partner in the California Cooperative Oceanic Fisheries Investigations (CalCOFI) program in order to collect oceanographic data in and near Monterey Bay. The aim of the program was to conduct joint fisheries-oceanographic cruises that would help researchers understand what contributed to observed fluctuations in the California sardine fishery. Hopkins condutced weekly sampling (more or less) continuously from March 1951 through June 1974. The raw and aggregated data for most of these cruises currently reside in analog form (handwritten data logs, annual reports, etc.) in the library at the Hopkins Marine Station. The dataset includes variables such as temperature, salinity, oxygen, phosphate, silicate, phytoplankton and zooplankton community structure and abundance, meteorological conditions, fish and marine mammal counts, and more. The collection includes forty-four 3-ring or loose-bound notebooks, twenty-two small, bound notebooks, minutes from annual meetings, annual data reports, and other ephemera. The Hopkins CalCOFI collection is large, completely analog, and very heterogeneous. We are in the early phases of planning a curation strategy, but our general objectives for the dataset are to digitize it, add metadata, convert sampling data to actionable formats, and make it all public. "
+</p>
+
+<ul>
+<li><a href="https://diglib.amphilsoc.org/data">American Philosophical Society Library data</a> - historic prison data &#x2013; a post office book kept by Benjamin Franklin during his tenure as Postmaster of Philadelphia &#x2013; a record of indentured individuals arriving in Philadelphia during the years of 1771-1773.</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orgc71bcd9">
+<h3 id="orgc71bcd9">Catalogs as data sets</h3>
+<p>
+<b>Museums</b>
+</p>
+<ul>
+<li><a href="https://github.com/MuseumofModernArt/collection">Museum of Modern Art (MoMA)</a> - Artists (15,651 records) and Artworks (135,423 records) - CSV and JSON - updated monthly</li>
+<li><a href="https://github.com/cmoa/collection">Carnegie Museum of Art Collection Data</a> - data on 28,269 museum objects and 59,031 items in Teenie Harris Archive - CSV and JSON</li>
+
+</ul>
+
+<p>
+<b>Libraries</b>
+</p>
+<ul>
+<li><a href="http://www.library.upenn.edu/collections/digital-projects/open-data-penn-libraries">University of Pennsylvania Libraries</a> &#x2013; Open bibliographic records (2 files - created by Penn, derived from other sources &#x2013; OPENN (high-resolution archival images of manuscripts and cultural heritage material, with machine-readable descriptive and technical metadata.)</li>
+<li><a href="https://library.harvard.edu/services-tools/harvard-library-apis-datasets">Harvard Library bibliographic dataset</a> - Over 12 million bibliographic records, many from OCLC and LC</li>
+<li><a href="https://blogs.loc.gov/thesignal/2018/10/data-mining-memes-in-the-digital-culture-web-archive/">Library of Congress Meme Generator and GIPHY data set metadata downloads</a> released last week</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Some museums and libraries are releasing dumps of metadata, on the premise that it might be usable for research and other purposes. 
+</p>
+
+<p>
+As a former instructor of library cataloging, I greatly appreciate the educational benefits of having such data sets freely available!
+</p>
+
+</aside>
+</section>
+<section id="slide-org757b20e">
+<h3 id="org757b20e">Challenges</h3>
+<ul>
+<li>Skills</li>
+<li>Scale</li>
+<li>Quality</li>
+<li>Rights</li>
+<li>Ethics</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Work in this area is very exciting to me, and becomes even more so when I think about the opportunitiesthat will be afforded as we develop practical ways for libraries to work with linked data at scale. 
+</p>
+
+<p>
+However this work has somewhat daunting challenges, including: 
+</p>
+<ul>
+<li>NEED FOR NEW SKILLS
+<ul>
+<li>text mining</li>
+<li>creating and preparing corpora</li>
+<li>database applications</li>
+<li>data manipulation software or programming languages</li>
+<li>large-scale file management</li>
+<li>cloud/distributed computing</li>
+
+</ul></li>
+<li>SCALE OF THE DATA FOR LARGE COLLECTIONS (requiring cloud/distributed computing)</li>
+<li>DATA QUALITY
+<ul>
+<li>There's no better way to find out all the things that are wrong with your data than to try to use it to do something other than its initial intended purpose. The promise of collections as data is marred in large part by the fact that so many libraries have for a long time accepted "good enough" metadata that was only good enough for its use in a traditional library catalog.</li>
+<li>OCR text quality is very poor to impossible for many older printed materials and handwritten materials</li>
+<li>Crowdsourcing is one model for solving problems in large datasets. See library projects such as <a href="https://labs.loc.gov/experiments/beyond-words/">LC Labs' Beyond Words</a> and <a href="https://www.sciencegossip.org/#/">Biodiversity Heritage Library's Science Gossip project</a> using the Zooniverse platform</li>
+
+</ul></li>
+<li>UNDERSTANDING RIGHTS ISSUES
+<ul>
+<li>Under what licenses do you release collections as data? It's interesting to observe the variations in how different libraries release their catalog data:
+<ul>
+<li>Release only bib records originally created by your institution? (<a href="https://www.lib.umich.edu/library-information-technology/open-access-bibliographic-records-available-download-and-use">UMich</a>)</li>
+<li>Or include the whole catalog (including vendor and OCLC records(released under Open Data Commons ODC-BY)) (Harvard, <a href="http://lito.cul.columbia.edu/extracts/ColumbiaLibraryCatalog/">Columbia Univ Libraries</a>)</li>
+<li>Or split the two into separate files, released under separate licenses? (<a href="http://www.library.upenn.edu/collections/digital-projects/open-data-penn-libraries">UPenn</a>)</li>
+
+</ul></li>
+
+</ul></li>
+<li>ETHICS, ETC.
+<ul>
+<li>Do our best to ensure no unintended consequences/conclusions drawn from data once it can be analyzed at large scale. However this is impossible to truly predict. How do we minimize harm?</li>
+<li>Acknowledge that algorithms are biased and tend to reinforce existing structures and hierarchies of privilege.</li>
+<li>Cultivate awareness of what collections, populations, voices are missing and work to represent them</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orgb9a87f1">
+<h3 id="orgb9a87f1">Lowering barriers to use</h3>
+<blockquote nil>
+<p>
+"Collections as data stewards aim to lower barriers to use. A range of accessible instructional materials and documentation should be developed to support collections as data use. These materials should be scoped to varying levels of technical expertise. Materials should also be scoped to a range of disciplinary, professional, creative, artistic, and educational contexts. Furthermore the community should be motivated and encouraged to build and share tools and infrastructure to facilitate use of collections as data."--<a href="https://collectionsasdata.github.io/statement/">Santa Barbara Statement on Collections as Data</a>
+</p>
+</blockquote>
+
+<aside class="notes">
+<p>
+And here is that link back to data literacy. Releasing collections as data is how libraries provide the raw materials for people to gain and hone these skills. 
+</p>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org6e662e9">
+<h2 id="org6e662e9">Library data</h2>
+<aside class="notes">
+<p>
+My daily work centers on a subset of "library data" so I'd claim some decent level of expertise in this category. 
+By "library data," I mean data the library creates, compiles, gathers, or uses in the process of carrying out the work of the library. 
+It includes data from external sources (discovery service knowledge bases, partner institutions, etc) that get used in the library's work. 
+</p>
+
+<p>
+Everyone working in a library interacts with and/or contributes to library data, but not everyone interacts with it or thinks about it <b>as</b> data. When I talk about "library data," it involves doing stuff with that data at scale. Not necessarily "big data" scale, but not manually, one record at a time. For example: when cataloging an online database, I am thinking of a MARC record as a description of that specific resource. This isn't a data-centric view. On the other hand, I am working with bib records as data when I extract from our ILS all the MARC records coded as online databases and analyze the fixed field coding patterns in order to make decisions about transforming the records so they scope properly as databases in our online catalog. 
+</p>
+
+<p>
+"A surprising takeaway for us has been that one of the primary users of our public data has been the museum itself. Easy access to our own data has enabled internal projects to be built on top of the published data, both because it’s in an easy-to-use form, but also because of the permissive license." &#x2013;Carnegie Museum <a href="https://collectionsasdata.github.io/facet2/">https://collectionsasdata.github.io/facet2/</a>
+</p>
+
+</aside>
+</section>
+<section id="slide-org7a002c6">
+<h3 id="org7a002c6">Trends I think I see</h3>
+<ul>
+<li>more positions requiring data-oriented skills</li>
+<li>more positions with "[meta]data strategy" or "systems strategy" in the title</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Overall, I think there is recognition that we need to be doing more library work at scale. I saw two job postings last week for metadata positions focused on large scale batch metadata work. 
+</p>
+
+<p>
+I think there is also recognition that our systems and data landscapes and the data and metadata that flow through them are becoming increasing complex and interconnected. And that there is a need within our organizations to have someone responsible for uncovering and documenting this knowledge.
+</p>
+
+<p>
+One example from UNC that catalyzed my thinking on this: 
+</p>
+
+<ul>
+<li>I knew how the bib records and the EAD data got linked/merged in the public catalog data layer</li>
+<li>Someone else knew how to create and mount the EADsinto our existing system</li>
+<li>Someone else was working on a new system to manage our EADs</li>
+<li>Someone else (catalog front end developer) knew the details of how requesting archival collections via Aeon works</li>
+<li>Someone else had implemented a feature so that there was a request button displayed on each rendered EAD</li>
+<li>NO ONE REALIZED that when the storage location of the EADs changed, the request buttons on the rendered EADs would all break because actually all the things I just mentioned were dependent on each other in ways no one taking care of things on the ground would be aware of.</li>
+
+</ul>
+
+<p>
+My colleagues at Duke University Libraries, Jaquie Samples and Dennis Christman (along with many others) developed a data flow documentation&#x2014;essentially a map of dependencies like the one above. Developing a similiar document for UNC Libraries is one of my goals. 
+</p>
+
+</aside>
+</section>
+<section id="slide-org74337de">
+<h3 id="org74337de">Some neat projects we have done recently</h3>
+<ul>
+<li>leverage HathiFiles to semi-automate HSL weeding project</li>
+<li>support of Materials Review project</li>
+<li>moving toward one extractor to rule them all&#x2026;</li>
+<li>metadata-first IA digitization-&gt;HT ingest workflow</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+<b>HSL weeding project</b>
+Our Health Sciences Library was starting a weeding project which included decision-making about a fair amount of older material. Their initial idea was to have student workers search HathiTrust for each title published before a certain year to see if the full text was freely available there. Thankfully they brought this project to us instead. We extracted from our ILS the relevant bibliographic information on the HSL collection being weeded. We compared that data against the <a href="https://www.hathitrust.org/hathifiles">HathiFiles</a>. That comparison was used to produce a report of: 
+</p>
+<ul>
+<li>clear matches where the full text of the HSL volume was definitely freely available via HathiTrust</li>
+<li>candidates for manual checking &#x2013; this was a report of ambiguous matches that a human should look at</li>
+
+</ul>
+
+<p>
+<b>Materials Review project</b>
+Library Data Strategy &amp; Services staff assisted the Materials Review team to develop spreadsheet reports that selectors and faculty could use to make decisions about materials cancellations. Creating these reports involved retrieving data from multiple sources, manipulating it so it could be merged, and outputting a useful final product. Data sources included: 
+</p>
+<ul>
+<li>bibliographic records from ILS</li>
+<li>order records from ILS (cost)</li>
+<li>reports from SerialsSolutions on our tracked holdings, including print and online ISSN for each title (when available), packages of with the title is part, dates of holdings for the title in each package, OA status</li>
+<li>usage statistics</li>
+
+</ul>
+
+<p>
+<b>One Extractor project</b>
+We had an "extract the catalog" script for our existing consortial online catalog. Then, we began developing a new version of that catalog, which required the data to be extracted in a slightly different way. In addition, we needed to extract records from our catalog in a slightly different way in order to prepare metadata for batches of titles to be ingested into HathiTrust. At some point, we also needed to extract our whole catalog&#x2014;in a slightly different way&#x2014;so that Google could analyze whether our percentage of unique materials made it worth partnering with us for a large scale digitization project. 
+</p>
+
+<p>
+The extraction process overall is always the same. What changes is stuff like: 
+</p>
+<ul>
+<li>need to extract one bib record with data from all attached item and holdings records; versus</li>
+<li>need to extract one copy of the bib record for each attached item record, with data from that item record; and</li>
+<li>what fields/subfields data from the attached non-bib records are mapped to</li>
+<li>what field/subfield bib record number is mapped to</li>
+
+</ul>
+
+<p>
+Instead of developing a complete extract script for each of these needs, LDSS staff have created an general extraction script that can be configured to output the extracted data in various ways. 
+</p>
+
+<p>
+<b>Metadata-first IA -&gt; HT digitization to preservation workflow</b>
+We are on our second Internet Archive (IA) Scribe contract. As part of this contract, IA provides a Table Top Scribe book scanner at our institution, along with Scribe operations staff to do the digitization. 
+</p>
+
+<p>
+IA is a great resource for bulk digitization and making digitized works accessible, however it is not a true preservation platform. UNC also ingests all Scribe-digitized materials into HathiTrust, which is a preservation platform. UNC librarians also want the URLs for the digitized versions added to the bib records of the print items that were scanned. 
+</p>
+
+<p>
+LDSS is responsible for adding these URLs back into our catalog records, and the preparation of metadata for HathiTrust ingests.
+</p>
+
+<p>
+In our first Scribe contract, the workflow was roughly: 
+</p>
+<ul>
+<li>selectors choose items for digitization</li>
+<li>staff and student workers:
+<ul>
+<li>assess whether item meets physical requirements for Scribe scanning</li>
+<li>verify item has not already been digitized by another institution and added to a trusted repository</li>
+
+</ul></li>
+<li>If the item passed the previous two tests, the worker then:
+<ul>
+<li>Found bib record in online catalog or ILS and pasted that into IA Scribe metadata spreadsheet</li>
+<li>Copy/pasted various metadata elements (author, title, language, publisher, etc) from catalog into IA Scribe metadata spreadsheet</li>
+
+</ul></li>
+<li>Items and spreadsheet were passed to Scribe operator who conducted digitization. 
+<ul>
+<li>Part of this process involved IA's software using the bib record number from the spreadsheet to grab that bib record from our catalog via a Z39.50 request &#x2013; the bib record is stored as MARC-XML in the IA data package (<a href="https://ia801600.us.archive.org/34/items/otterbeinhymnalf00chur/otterbeinhymnalf00chur_marc.xml">example</a>). The bib record data is also mapped into data for display in the IA record page for the item (<a href="https://archive.org/details/otterbeinhymnalf00chur">example</a>).</li>
+
+</ul></li>
+<li>Monthly, LDSS pulled report of newly digitized items from IA. Report included bib record number submitted for item, URL of digitized item, and any volume/issue designation submitted for item.</li>
+<li>Quarterly, LDSS used similar report from IA to compile a HathiTrust ingest</li>
+
+</ul>
+
+<p>
+A number of metadata problems tended to emerge and complicate or block LDSS work, leading to delays in catalog link addition and HathiTrust ingest. These included: 
+</p>
+
+<ul>
+<li>Inconsistency in bib record number format submitted at digitization time (with vs. without check digit) leading to extra work to normalize bib numbers. Our processes hinge upon a standard form of bib number.</li>
+<li>IA has basically no metadata quality requirements, while HathiTrust has fairly stringent metadata quality requirements. At the point of submitting ingests, HathiTrust would sometimes reject hundreds of items for issues such as bib record lacking OCLC number or date data, or there being no volume/issue for a serial or multi-volume monograph.</li>
+<li>Missing volume/issue data caused delays and tedious manual work to add URLs to bib records for serials and multi-volume sets. LDSS staff would have to try to figure out which item each digitized object represented, add that item's volume/issue info to the IA data, and add it to the $3 of the 856 field containing the link to that item in the bib record. We believe users should know from looking at the record where they are going to be taken when they click a link. They shouldn't have to click on multiple links to get to the volume that's of interest.</li>
+
+</ul>
+
+<p>
+For these reasons, in planning for our second Scribe contract, I advocated firmly for a metadata-first approach. This centers upon a newly designed spreadsheet for preparing the metadata to be passed along to the Scribe operator with the items to be digitized. 
+</p>
+
+<p>
+When a worker begins work on a new batch of items to be Scribed, they make a copy of our Scribe spreadsheet template. This spreadsheet is set up to connect to our ILS (via III Sierra's bib and item record APIs). 
+</p>
+
+<p>
+Now, when a physical item has been selected and has passed the first couple of checks, all the worker has to do is find the matching bib <b>and item</b> records in the ILS and paste the bib and item record numbers into the spreadsheet. 
+</p>
+
+<p>
+The spreadsheet: 
+</p>
+<ul>
+<li>normalizes the record numbers, ensuring they are passed on to Scribe operator without check digit</li>
+<li>pulls in the title, author, language, etc metadata that used to need to be manually copy/pasted (which left room for errors)</li>
+<li>consistently pulls in volume/issue information for every item</li>
+<li>runs several metadata quality checks for issues that will block HathiTrust ingest</li>
+<li>if metadata issues are found, uses the item location code to show where to route the item for metadata updates</li>
+
+</ul>
+
+<p>
+One person in our Special Collections Technical Services and one person in our main Technical Services have been assigned as main contacts for IA/HT metadata fixes. When the spreadsheet flags a metadata problem for an item, the worker physically places the item on the designated shelf where the Tech Services folks will check for them. The metadata fixes typically are extremely quick, and then the Tech Services staff route the item back to the worker who brought it to them. Often the item proceeds for digitization with the original batch of which it was part. 
+</p>
+
+<p>
+The effect of this is: 
+</p>
+<ul>
+<li>metadata issues are taken care of at the point in the process where it makes the most sense&#x2014;when the physical item is in hand and can be referred to&#x2014;rather than discovered later in bulk by LDSS, a team who does not usually handle physical materials at all</li>
+<li>metadata issues are fixed before we push metadata out into the larger metadata ecosystem. The metadata in IA and HT is correct from the start, with no extra work after the fact</li>
+<li>No manual copy/paste errors and no missing volume/item data</li>
+
+</ul>
+
+</aside>
+</section>
+<section id="slide-orgfa58ec8">
+<h3 id="orgfa58ec8">On the table: Data warehousing</h3>
+
+<div id="org3eec690" class="figure">
+<p><img src="./images/data_warehousing.png" alt="data_warehousing.png" />
+</p>
+<p><span class="figure-number">Figure 5: </span>Conceptual flow of data warehousing<sup>1</sup></p>
+</div>
+
+<p>
+Data sources could include: 
+</p>
+<ul>
+<li>ILS (bib, order, circ, financials, patron&#x2026;)</li>
+<li>Discovery knowledge base data</li>
+<li>Usage statistics (of repository, digital collections, vendor-hosted resources)</li>
+<li>E-resource entitlement lists</li>
+<li>Web analytics</li>
+<li>Search logs</li>
+<li>Interlibrary borrowing and document delivery system data</li>
+<li>and more&#x2026;</li>
+
+</ul>
+<div class="notes">
+<p>
+As libraries face greater-than-ever resource pressures, we see assessment and analytics as a very convincing way to tell stories about our value. 
+</p>
+
+<p>
+I am in no way an assessment librarian, and am by nature a critic of overreliance on quantitative measures and anything that suddenly becomes a buzzword, like "metrics." BUT, I do see the value of being able to generate stats, reports, visualizations, and dashboards with minimal friction, and I have intimate understanding of how our complex, siloed systems that generate and store library data create a lot of friction and drag. 
+</p>
+
+<p>
+One approach to making this work easier is data warehousing. There seems to be a trend in this direction. I keep seeing programs on the topic at Innovative Users Group meetings, and there was a racous breakout session on the topic at Code4Lib 2018.
+</p>
+
+<p>
+A couple of years ago I had floated the idea of data warehousing at UNC, primarily to support technical services workflows not supported by our ILS and other tools, such as: 
+</p>
+<ul>
+<li>semi-automated reconciliation of vendor-provided MARC record sets against entitlement lists for e-resource collections</li>
+<li>experiments with leveraging open linked data for authority control work</li>
+<li>ability to run (and schedule to run) more flexible and sophisticated reports than we an within our ILS, with applications like: finding records with invalid MARC</li>
+
+</ul>
+
+<p>
+Now that there's movement/interest from the assessment side, it seems this might make it onto our real projects list when certain key positions are finally filled. 
+</p>
+
+
+<ol>
+<li>Yoose, Becky. “Wrangling Library Patron Data.” presented at the Privacy in Libraries, a LITA webinar series, April 11, 2018. <a href="https://docs.google.com/presentation/d/1_W-3I9CSz6Uu5pFnKsc2USMGA4kOxzx25XiUj_e57bE/edit#slide=id.p">https://docs.google.com/presentation/d/1_W-3I9CSz6Uu5pFnKsc2USMGA4kOxzx25XiUj_e57bE/edit#slide=id.p</a>.</li>
+
+</ol>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbdf289b">
+<h2 id="orgbdf289b">Patron data</h2>
+<ul>
+<li>patron data as library data</li>
+<li>vendor and third party applications collection/use of patron data</li>
+<li>patron data as the patron's individual personal information environment</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Finally, we have patron data, which I break into three subcategories. 
+In part, patron data is a subcategory of library data. This includes the obvious such as borrower status, check-out history (maybe), current items checked out, and fines. But we also have patron data in our search and reference chat logs, web analytics, studies we do of how our spaces are used, etc. 
+</p>
+
+<p>
+Aside from this, the vendors and third party applications we use to provide content to our patrons certainly also collect data about our patrons. Do we know what they collect and what they do with it? What are our responsibilities here? 
+</p>
+
+<p>
+Lastly, there's the fact of each of our patrons as individuals with their own personal data&#x2014;about them, created by them, belonging to them, in or out of their control. What connection do research libraries have to this? 
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orge05d890">
+<h3 id="orge05d890">Shout outs</h3>
+<p>
+<a href="https://docs.google.com/presentation/d/1_W-3I9CSz6Uu5pFnKsc2USMGA4kOxzx25XiUj_e57bE/edit#slide=id.g35b47fb8f7_0_256">Wrangling Library Patron Data</a> - Becky Yoose, LITA Webinar 2018-04-11
+</p>
+
+<p>
+“Ethics in Research Use of Library Patron Data: Glossary and Explainer.” Digital Library Federation, Ethics Subgroup, October 2, 2018. <a href="https://doi.org/10.17605/OSF.IO/XFKZ6">https://doi.org/10.17605/OSF.IO/XFKZ6</a>.
+</p>
+
+<p>
+Salo, Dorothea. “We, Surveilled and Afraid, in a World We Never Made.” Speaker Deck, October 11, 2018. <a href="https://speakerdeck.com/dsalo/we-surveilled-and-afraid-in-a-world-we-never-made">https://speakerdeck.com/dsalo/we-surveilled-and-afraid-in-a-world-we-never-made</a>.
+</p>
+
+<p>
+Keep an eye out for report out of:   “National Web Privacy Forum - MSU Library | Montana State University,” September 12, 2018. <a href="https://www.lib.montana.edu/privacy-forum/">https://www.lib.montana.edu/privacy-forum/</a>.
+</p>
+
+
+<aside class="notes">
+<p>
+I am just touching the surface of this topic and would point you the resources shown here, from which I have heavily cribbed.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org19c3338">
+<h3 id="org19c3338">Patron data as library data</h3>
+<blockquote nil>
+<p>
+We protect each library user's right to privacy and confidentiality with respect to information sought or received and resources consulted, borrowed, acquired or transmitted. &#x2013;ALA Code of Ethics<sup>1</sup>
+</p>
+</blockquote>
+
+<aside class="notes">
+<p>
+This presentation takes a little turn toward the dark side here, because I'm afraid we really are falling down on our professional code of ethics here, given the reality of the "surveillance capitalist" world in which we are embedded. 
+</p>
+
+<p>
+On the 11th of this month Dorothea Salo gave a keynote talk at the Minnesota Library Association Annual Conference in which she pulled no punches pointing out the ways in which libraries are being complicit collaborators in this surveillance panopticon, including: 
+</p>
+<ul>
+<li>serving up insecure (http instead of https) library websites</li>
+<li>having ad trackers (DoubleClick, Ad Nexus) installed in library websites and apps</li>
+<li>using Google analytics, given Google's privacy track record</li>
+<li>Enthusiastically buying in to "learning analytics" that rely on student surveillance (including what e-resources they use and what books they check out) to prove our value within our organizations</li>
+
+</ul>
+
+<p>
+There are no easy answers here, though I agree with Salo that we need to remember that "No." can be an answer and a complete sentence. As both Salo and Yoose point out, simply asking "Is this ethical?" and "Why are we doing this?" can create a pause in which we realize we can do better. 
+</p>
+
+
+<p>
+<b>More info/references</b>
+</p>
+<ol>
+<li>American Library Association. “ALA Code of Ethics,” Adopted 1939, last amended January 22, 2008. <a href="http://www.ala.org/tools/ethics">http://www.ala.org/tools/ethics</a>.</li>
+
+</ol>
+
+</aside>
+
+</section>
+<section id="slide-orgc90f2bd">
+<h3 id="orgc90f2bd">What patron data do we even have?</h3>
+<blockquote nil>
+<p>
+"Expect any data you collect and store to be used for purposes you didn't intend&#x2014;and maybe wouldn't approve of."&#x2013;Dorothea Salo<sup>1</sup>
+</p>
+</blockquote>
+
+<ul>
+<li>What data are we collecting?</li>
+<li>Why are we collecting it? Is there an actual solid business need for it?</li>
+<li>Where is this data stored?</li>
+<li>Who has access to this data? Audit regularly!</li>
+
+</ul>
+
+<aside class="notes">
+<ol>
+<li>Salo, Dorothea. “We, Surveilled and Afraid, in a World We Never Made.” Speaker Deck, October 11, 2018. <a href="https://speakerdeck.com/dsalo/we-surveilled-and-afraid-in-a-world-we-never-made">https://speakerdeck.com/dsalo/we-surveilled-and-afraid-in-a-world-we-never-made</a>.</li>
+
+</ol>
+
+</aside>
+
+</section>
+<section id="slide-orga3f63c2">
+<h3 id="orga3f63c2">Data warehousing, again</h3>
+<ul>
+<li>Extract -&gt; Transform -&gt; Load (ETL)</li>
+<li>Transform is a magical patron data protecting step.</li>
+<li>(But not <b>that</b> magical)</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+In transformation step you can: 
+</p>
+<ul>
+<li>remove data fields altogether</li>
+<li>obfuscate data</li>
+<li>aggregate data</li>
+<li>de-identify data</li>
+
+</ul>
+
+<p>
+But don't be too confident: 
+</p>
+<ul>
+<li>De-identifcation methods do not provide adequate privacy protection for outliers in a service population, or a small overall service population or subset. Nor does it protect against identifiable patterns in the data (e.g. AOL search logs used to reconstruct specific identities belonging to distinct persons) &#x2013; or what identifiable data may emerge if your data set is matched up with another data set(eg NYC Taxicab data set + images from Google image search + other external data = identifying individual taxi passengers) (Yoose, Wrangling&#x2026;, slide 27, 38)</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orgaa32cc0">
+<h3 id="orgaa32cc0">What our vendors and third party applications do with our patrons' data</h3>
+<ul>
+<li>Start on this early with each new agreement</li>
+<li>If you haven't been on it from the start, consider working to add addendums to existing contracts/licenses, that address:
+<ul>
+<li>basic data standards we expect to be followed (HIPPA, COPPA, ALA Library Bill of Rights, etc.)</li>
+<li>expected data disclosure and confidentiality practices</li>
+<li>vendor liability for data breaches/leaks</li>
+
+</ul></li>
+<li>AND really thinking ahead:
+<ul>
+<li>Can we take our data (and our patrons' data) with us if we move to a different product</li>
+<li>Is the system even able to truly delete your data?</li>
+
+</ul></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Again, this is one of those "Do we even have any idea?" questions. And it's a long haul and a lot of work, but it is the right thing to do. 
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgb70cecf">
+<h3 id="orgb70cecf">Helping our patrons manage their own data and privacy</h3>
+<p>
+Instruction and workshops to think about if we're not doing them already:
+</p>
+<ul>
+<li><a href="https://ssd.eff.org/en">Surveillance Self-Defense (EFF)</a></li>
+<li><a href="https://datadetox.myshadow.org/detox">Data Detox Kit</a> from <a href="https://tacticaltech.org/">Tactical Technology Collective</a></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+This again brings it back to that orthogonal topic of helping our users become more deeply data literate, which is where I will stop talking and see what you have to say&#x2026;
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org729a76d">
+<h2 id="org729a76d">Thank you</h2>
+
+<div id="orge47f194" class="figure">
+<p><img src="./images/any_questions.jpg" alt="any_questions.jpg" height="400" />
+</p>
+<p><span class="figure-number">Figure 6: </span>Any questions?</p>
+</div>
+
+<p>
+Presentation + supplementary materials: <a href="https://is.gd/20181016_ndhl">https://is.gd/20181016_ndhl</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./lib/js/head.min.js"></script>
+<script src="./js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+margin: 0.00,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
