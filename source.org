@@ -20,11 +20,11 @@
 #+BEGIN_NOTES
 My title is Library Data Strategist and I am head of the Library Data Strategy & Services (LDSS) section in Davis Library Tech Services. 
 
-LDSS was created as a service point for our colleagues across the libraries. We help folks solve workflow issues and execute projects by using technology to leverage library data at scale. (If this means nothing to you, follow the LDSS link there when you download the slides to learn more.) By "we," I mainly mean Jamie McGarty who is the data wizard to the "data magician" folks think I am. :-) 
+LDSS was created as a service point for our colleagues across the libraries. We help folks solve workflow issues and execute projects by using technology to leverage library data at scale. (If this means nothing to you, follow the LDSS link there when you download the slides to learn more.) By "we," I mainly mean jcm who is the data wizard to the "data magician" folks think I am. :-) 
 
 We also have 3 ongoing routine responsibilities: 
 
- - MARC metadata for monographic and integrating resource online resources. Connie Israel and Jamie McGarty keep this running smoothly despite challenges you wouldn't believe.
+ - MARC metadata for monographic and integrating resource online resources. Connie Israel and jcm keep this running smoothly despite challenges you wouldn't believe.
  - non-MARC metadata policy, creation, assessment, remediation, and consultation for the institutional repository, digital collections, and other projects across the Libraries. Anna Goslen and Julia Gootzeit are the powerhouse team on this.
  - And the one that's relevant to this presentation: maintaining the processes that extract our entire catalog (Sierra) and transform it for ingest into our shared online catalog. 
 
