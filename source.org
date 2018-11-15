@@ -1,7 +1,7 @@
 #+AUTHOR: Kristina M. Spurgin
-#+TITLE: Data in the Transformative Research Library
+#+TITLE: Remapping Problematic LCSH in TRLN Discovery
 #+EMAIL: kspurgin@email.unc.edu
-#+DATE: 2018-10-16
+#+DATE: 2018-11-15
 #+REVEAL_TRANS: none
 #+REVEAL_THEME: sky
 #+REVEAL_MIN_SCALE: 1
@@ -11,94 +11,101 @@
 #+OPTIONS: num:nil
 #+EXPORT_FILE_NAME: index.html
 
-* Introduction
- - Who am I?
- - Notes and disclaimers
- - Presentation + supplementary materials at: https://is.gd/20181016_ndhl
-#+BEGIN_NOTES
- - Library Data Strategist at UNC Chapel Hill Libraries
- - It is impossible to comprehensively cover this topic in 45 minutes.
- - I have chosen to cover some areas I feel are particularly important, or where there are developments I believe are particularly interesting
- - Though the topics are presented in a more or less linear fashion, they are truly overlapping and inter-related
- - This presentation is available online with speaker notes that include details mentioned and citations
-#+END_NOTES
-
-* Orthogonal theme: Data Literacy
-#+BEGIN_QUOTE
-Information that directly impact people’s lives is increasingly accessible but civil society is falling behind in making effective use of it. --[[https://schoolofdata.org/team/][School of Data]]
-#+END_QUOTE
-
-Universities have a responsibility to ensure that today's students learn to engage with and use data to understand the world and inform decision-making. 
-
-*Research libraries can be key partners in making this happen.*
+* Introduction (About me)
+ - Library Data Strategist, Head of [[https://internal.lib.unc.edu/wikis/staff/index.php/Library_Data_Strategy_%26_Services_(LDSS)][Library Data Strategy & Services]]
+ - TRLN Discovery Developer Team
 
 #+BEGIN_NOTES
-This is a theme that I wanted to nod to in almost every slide in this presentation, so I wanted to make this statement up front so I can point back to it. 
+My title is Library Data Strategist and I am head of the Library Data Strategy & Services (LDSS) section in Davis Library Tech Services. 
 
-Data literacy is an important aspect of being an educated person today. The ability to understand and grapple with data cannot be left to the tech nerds and 'business intelligence specialists.' The news cycle provides plenty of dystopian examples of what these folks will do with data when there is no good data-informed oversight or critical response. 
+LDSS was created as a service point for our colleagues across the libraries. We help folks solve workflow issues and execute projects by using technology to leverage library data at scale. (If this means nothing to you, follow the LDSS link there when you download the slides to learn more.) By "we," I mainly mean Jamie McGarty who is the data wizard to the "data magician" folks think I am. :-) 
 
-Whether universities are taking seriously the responsibility to build a data literate populace is out of scope of this talk, but this is a topic that research libraries can champion within their organizations and we are well-located to contribute to this goal. 
+We also have 3 ongoing routine responsibilities: 
 
-As the rest of this presentation will show, libraries are already a hub of many of essential data literacy skills. We already partner with faculty to enrich learning experiences with our collections and expertise. We can expand these partnerships to embed data literacy in classrooms across disciplines.
+ - MARC metadata for monographic and integrating resource online resources. Connie Israel and Jamie McGarty keep this running smoothly despite challenges you wouldn't believe.
+ - non-MARC metadata policy, creation, assessment, remediation, and consultation for the institutional repository, digital collections, and other projects across the Libraries. Anna Goslen and Julia Gootzeit are the powerhouse team on this.
+ - And the one that's relevant to this presentation: maintaining the processes that extract our entire catalog (Sierra) and transform it for ingest into our shared online catalog. 
 
-*More info/references*
- - [[https://schoolofdata.org/][School of Data]] - "School of Data is a global network committed to advancing data literacy in civil society. Information that directly impact people’s lives is increasingly accessible but civil society is falling behind in making effective use of it. Through our global network of data literacy practitioners and trainers, School of Data seeks to address this data skills gaps in order to amplify the messages of civil society through the use of data. We level the playing field by ensuring that civil society organisations and newsrooms have the knowledge, resources and tools they need to participate fully in the information age... School of Data is a network of data literacy practitioners composed of organisations and individuals. Together, we implement an array of data literacy programmes in our respective countries and regions. Members of School of Data network work to support civil society organizations (CSOs), journalists, and citizens to engage with and use data in their efforts to create better, more equitable and more sustainable societies. Over the past four years, School of Data has succeeded in developing and sustaining a thriving network of data literacy practitioners across Europe, Latin America, Asia and Africa."
+I'm also the data expert on the TRLN Discovery Developer Team. 
+TRLN Discovery is the new shared online catalog we've been building for the past couple of years. 
+Which brings me to the question of...
 #+END_NOTES
 
-* Context: The transformative research library
- - Libraries are in transformation
- - Working in a transformative library transforms you
- - A transformative research library transforms the world
+* Introduction (About the shared online catalog)
+ - TRLN initiative since 2007
+ - Legacy to now -- Endeca
+   - http://search.trln.org/
+   - https://search.lib.unc.edu/
+   - https://search.lib.unc.edu/filmfinder/
+ - Coming soon -- TRLN Discovery
+   - https://disco-qa.lib.unc.edu/
 
 #+BEGIN_NOTES
-In my research, I found that being a transformative research library is a core part of your library's mission. I did not find a clear outline what that means to you in practice, so I thought about what it means to me in order to scope and bound this talk. What I came up with was: 
+That it is a TRLN initiative means the catalog is shared between Duke, NC Central, NC State, and UNC Libraries.
 
-First, research libraries themselves are in a transformation process.
-Many libraries are expanding our missions from a focus on collecting and providing access to research outputs, to providing support for the entire research lifecycle.
-This expanded mission calls for new services (where collections themselves are understood to be services, and we broaden our definition of what collections are).
-These changes are happening in an environment where many research libraries face ever-decreasing resources.
-This raises difficult questions about what we will stop doing and stop providing in order to rise to our new missions, given that assuming we can perpetually "do more with less" is unrealistic and a recipe for failure and burnout
+The idea behind this is: 
 
-In this environment, library staff are required to: 
-- iteratively rethink why and how work is done, in alignment with overall library mission and goals
-- extend their existing skills and experise into new domains
-- gain new skills and expertise
-- build relationships with colleagues and partners inside and out of the libraries in new and creative ways
+Each institution smooshes the data from their ILS-based catalog, digital collections, and other sources into a central, shared index. 
 
-The transformative research library changes the world by: 
-- playing a core role in producing a data-literate society
-- helping researchers find, access, use, and create new knowledge
-- creating collections that can be aggregated and used programmatically in novel ways
-- knocking down barriers to access
+The online catalog applications (or catalog websites) are built using that shared index as the underlying data source. 
 
-Which doesn't actually narrow it down that much, but oh well... 
+Currently we have a proprietary shared index built using an Oracle e-commerce product called Endeca. When you use SearchTRLN, you are searching and seeing all the data in the entire Endeca index. When you use search.lib.unc.edu, you are searching that same index, but it's pre-scoped to show only items held by UNC. When you use FilmFinder, it's searching that same index, but pre-scoping even narrower to show only UNC-held films, videos, etc. 
 
-*More info/references*
-For an inspiring vision of the transformative future of libraries, see the [[https://future-of-libraries.mit.edu/][MIT Future of Libraries Task Force Preliminary Report]]. [TODO: zcite]
+We are excited to be building a new shared index and associated online catalog web applications based on open-source technologies from (and/or heavily used by) the library community: TRLN Discovery. 
+
+This is going to work a bit differently than the current catalog where you have to go to SearchTRLN to search across all institutions. 
 #+END_NOTES
 
-* Context: Data
-  - Research data
-  - Collections as data
-  - Library data
-  - Patron data
-   - (Library data)
-   - Vendors and third party applications
-   - All the data about an individual
+* "Expand to TRLN"
+#+CAPTION: "Expand to TRLN" feature
+#+NAME:  fig:expand_to_trln.png
+[[./images/expand_to_trln.png]]
 
 #+BEGIN_NOTES
-I'm going to talk about four general categories of data in research libraries today. 
+There won't be a separate equivalent to SearchTRLN any more. UNC users will, in general, remain in the UNC catalog. But the UNC catalog gives you the ability to seamlessly toggle back and forth between UNC holdings only, and all TRLN holdings. 
 
-(READ CATEGORIES) 
-
-I show you this as an overview of what's coming in the rest of this presentation. I'll talk more about how I define each of these as I get to the relevant sections. 
-
+Here you can see that we have 132 results at UNC. By clicking on "UNC, Duke, NCSU, NCCU Libraries," we can see all 378 items held across those institutions.
 #+END_NOTES
+
+* Shared index: Solr 
+#+CAPTION: Searching Solr directly
+#+NAME:  fig:solr_directly.png
+[[./images/solr_directly.png]]
+
+#+BEGIN_NOTES
+With TRLN Discovery, the shared index is built with [[http://lucene.apache.org/solr/][Solr]], an extremely popular open-source indexing and search platform used for all kinds of applications.
+
+You can search Solr directly but it ain't easy and it ain't pretty.
+To find online items with goats in the title at UNC, you've got to type in a query like this: 
+
+"q":"title_main_t:goats AND access_type_f:Online AND institution_a:unc"
+
+Imagine if you want to search across all the different types of titles! 
+
+Also, who wants to ever see a page that looks like this (except for a data nerd like me)?
+
+Can you even see what the title of this first thing is? (Sheep and goats)
+#+END_NOTES
+
+* Shared catalog application: Blacklight
+#+CAPTION: Searching with Blacklight
+#+NAME:  fig:with_blacklight.png
+[[./images/with_blacklight.png]]
+
+#+BEGIN_NOTES
+ The new online catalog application that will use Solr index as a data source is a modified version of Blacklight. Blacklight is a generic library-centric discovery interface that can be used on top of an index to provide a good user experience. 
+
+This looks much better! 
+
+We are getting generally the same results (Sheep and goats is still the first result), but they look much nicer! 
+We are getting a few more results because we are able to tell Blacklight that a title search should search a bunch of fields: 
+main title, variant title, included title, related title, earlier title, etc. 
+
+We have the facets, and a checkbox to limit to online things -- all the user interface stuff. 
+#+END_NOTES
+
 
 * Research Data
-#+CAPTION: USGS Science Data Lifecycle Model. Boxes indicate the main Model elements, and the shaded arrows below represent cross-cutting elements.^{1}
-#+NAME:  fig:data_lifecycle.png
-[[./images/data_lifecycle.png]]
 
 #+BEGIN_NOTES
 Research data is data in any format gathered, created, and/or used in the process of research. This includes numeric data, textual data, audio and visual data, sensor data, etc. 
